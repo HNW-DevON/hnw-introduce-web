@@ -1,0 +1,10 @@
+<svg width="124" height="124" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="62" cy="62" r="62" fill="#3292FB"/>
+<circle cx="62" cy="62.0001" r="48.7143" fill="#83BDFD"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M62 124V0C96.2417 0 124 27.7583 124 62C124 96.2417 96.2417 124 62 124Z" fill="#097CFA"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M62 110.714C88.9042 110.714 110.714 88.9042 110.714 62.0001C110.714 35.0959 88.9042 13.2858 62 13.2858C62 13.2858 62 13.2858 62 13.2858L62 110.714Z" fill="#5AA7FC"/>
+<rect x="43.4" y="44.2858" width="8.85714" height="14.1714" fill="#5AA7FC"/>
+<rect x="72.6285" y="44.2858" width="8.85714" height="14.1714" fill="#3292FB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.4286 70.8572C35.4286 70.8572 35.4286 70.8572 35.4286 70.8572C35.4286 85.5322 47.325 97.4286 62 97.4286C76.675 97.4286 88.5714 85.5322 88.5714 70.8572L35.4286 70.8572Z" fill="#5AA7FC"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M62 97.4286L62 70.8572L88.5714 70.8572C88.5714 85.5322 76.675 97.4286 62 97.4286Z" fill="#3292FB"/>
+</svg>
