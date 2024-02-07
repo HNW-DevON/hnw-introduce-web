@@ -7,6 +7,8 @@ export const MainHeader = styled.div`
     align-items: center;
     display: flex;
     justify-content: space-around;
+    position: fixed;
+    top: 0;
 `;
 
 export const Logo = styled.img`
@@ -21,5 +23,5 @@ export const Context = styled.div`
   justify-content: space-between;
   align-items: center;
   font-weight: bolder;
-  font-size: 17px;
+  font-size: 14px;
 `;

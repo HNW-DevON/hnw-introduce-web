@@ -3,10 +3,10 @@ import { useNavigate, useLocation } from 'react-router-dom';
 
 import Header from "../../components/Header/Header"
 
-const main = () => {
+const member = () => {
   return (
     <Header/>
   )
 }
 
-export default main
+export default member
