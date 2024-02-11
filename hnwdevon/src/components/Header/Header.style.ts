@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MainHeader = styled.div`
     width: 100vw;
-    height: 9vh;
+    height: 18vh;
     color: #1a1a1a;
     align-items: center;
     display: flex;
@@ -23,5 +23,10 @@ export const Context = styled.div`
   justify-content: space-between;
   align-items: center;
   font-weight: bolder;
-  font-size: 14px;
+  font-size: 1rem;
 `;
+
+export const HeaderFix = styled.div`
+  position: relative;
+  z-index: 1;
+`

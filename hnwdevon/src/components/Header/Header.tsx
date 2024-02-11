@@ -9,14 +9,16 @@ const Header = () => {
     const location = useLocation();
 
     return (
-        <S.MainHeader>
-            <S.Logo src={goodBuyLogo} alt="error" className="Logo" onClick={() => navigate("/")}/>
-            <S.Context>
-                <p onClick={() => navigate("/")}>메인</p>
-                <p onClick={() => navigate("/introduce")}>서비스</p>
-                <p onClick={() => navigate("/member")}>팀</p>
-            </S.Context>
-        </S.MainHeader>
+        <S.HeaderFix>
+            <S.MainHeader>
+                <S.Logo src={goodBuyLogo} alt="error" className="Logo" onClick={() => navigate("/")}/>
+                <S.Context>
+                    <p onClick={() => navigate("/")}>메인</p>
+                    <p onClick={() => navigate("/introduce")}>서비스</p>
+                    <p onClick={() => navigate("/member")}>팀</p>
+                </S.Context>
+            </S.MainHeader>
+        </S.HeaderFix>
   )
 }
 
