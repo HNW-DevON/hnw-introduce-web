@@ -4,11 +4,14 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import Header from "../../components/Header/Header"
 import * as S from "../main/main.style";
 
+import FistBackground from "../../assets/image/background1.svg"
+
 const main = () => {
   return (
     <>
+        <S.MainBackgroundimg src={FistBackground}/>
         <Header/>
-        <S.MainBackground>
+        <>
         <S.TitleWrap>
             <S.Maintitle>당신의 올바른 소비를 위해</S.Maintitle>
         </S.TitleWrap>
@@ -18,8 +21,7 @@ const main = () => {
         <S.downloadButtonWrap>
             <S.downloadButton>앱 다운로드</S.downloadButton>
         </S.downloadButtonWrap>
-        </S.MainBackground>
-        
+        </>
     </>
   )
 }

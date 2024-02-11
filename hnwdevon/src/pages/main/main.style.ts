@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const Maintitle = styled.div`
     color: black;
     font-weight: 900;
-    font-size: 23px;
+    font-size: 1.4rem;
 
     position: absolute;
     top: 0;
-    margin-top: 80%;
+    margin-top: 63%;
 `
 
 export const TitleWrap = styled.div`
@@ -21,22 +21,17 @@ export const TitleWrap = styled.div`
 export const Maintitle2 = styled.div`
     color: black;
     font-weight: 900;
-    font-size: 28px;
+    font-size: 2rem;
 
     position: absolute;
     top: 0;
-    margin-top: 90%;
-`
-
-export const MainBackground = styled.div`
-    height: 100vh;
-    background-image: white;
+    margin-top: 73%;
 `
 
 export const downloadButton = styled.button`
     background-color: #097CFA;
     border-radius: 23px;
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: 800;
     color: white;
 
@@ -52,7 +47,7 @@ export const downloadButton = styled.button`
 export const downloadButtonWrap = styled.div`   
     position: absolute;
     top: 0;
-    margin-top: 130%;
+    margin-top: 100%;
 
     display: flex;
     justify-content: center;
@@ -60,4 +55,11 @@ export const downloadButtonWrap = styled.div`
     text-align: center;
 
     width: 100vw;
+`
+
+export const MainBackgroundimg = styled.img`
+    margin: 0px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
 `
