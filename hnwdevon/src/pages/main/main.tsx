@@ -10,6 +10,9 @@ import HisMessage2 from "../../assets/image/histroymessage2.svg"
 import HisMessage3 from "../../assets/image/histroymessage3.svg"
 import WhiteBack from "../../assets/image/whiteback.svg"
 import SecondBackground from "../../assets/image/3back.svg"
+import Pesonal from "../../assets/image/Pesonal.svg"
+import Economy from "../../assets/image/economy.svg"
+import Blueline from "../../assets/image/blueline.svg"
 
 const main = () => {
   return (
@@ -40,6 +43,18 @@ const main = () => {
           </S.HistoryStartWrap>
         </>
         <S.SecondBackImg src={SecondBackground}/>
+        <S.PesonalImg src={Pesonal}/>
+        <S.EconomyImg src={Economy}/>
+        <S.BlueLine1 src={Blueline}/>
+        <S.BlueLine2 src={Blueline}/>
+        <S.MainLastWrap>
+          <S.MainLastTitle>착한소비는</S.MainLastTitle>
+          <S.MainLastSub>
+            <S.MainLastSubSpan>개인</S.MainLastSubSpan>과 
+            <S.MainLastSubSpan>기업</S.MainLastSubSpan> 모두의
+          </S.MainLastSub>
+          <S.MainLastEsg><S.MainLastEsgSpan>ESG </S.MainLastEsgSpan>실천을 지향해요!</S.MainLastEsg>
+        </S.MainLastWrap>
     </>
   )
 }

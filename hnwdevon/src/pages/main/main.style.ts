@@ -146,3 +146,85 @@ export const SecondBackImg = styled.img`
     width: 100%;
     display: block;
 `
+
+export const PesonalImg = styled.img`
+    position: absolute;
+    top: 0;
+    margin-top: 480%;
+    margin-left: 13%;
+`
+
+export const EconomyImg = styled.img`
+    position: absolute;
+    top: 0;
+    margin-top: 580%;
+    margin-left: 63%;
+`
+
+export const BlueLine1 = styled.img`
+    position: absolute;
+    top: 0;
+    margin-top: 480%;
+    margin-left: 82%;
+`
+
+export const BlueLine2 = styled.img`
+    position: absolute;
+    top: 0;
+    margin-top: 580%;
+    margin-left: 13%;
+`
+
+export const MainLastTitle = styled.div`
+    color: black;
+    font-weight: 900;
+    font-size: 1.5rem;
+
+    position: absolute;
+    top: 0;
+    margin-top: 535%;
+`
+
+export const MainLastSub = styled.div`
+    color: black;
+    font-weight: 900;
+    font-size: 1.3rem;
+
+    position: absolute;
+    top: 0;
+    margin-top: 545%;
+`
+
+export const MainLastSubSpan = styled.span`
+    color: #097CFA;
+    font-weight: 900;
+    font-size: 1.4rem;
+`
+
+export const MainLastEsg = styled.div`
+    color: black;
+    font-weight: 900;
+    font-size: 1.5rem;
+
+    position: absolute;
+    top: 0;
+    margin-top: 555%;
+`
+
+export const MainLastEsgSpan = styled.span`
+    color: #076CDB;
+    font-weight: 800;
+    font-size: 1.6rem;
+`
+
+export const MainLastWrap = styled.div`
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100vw;
+`
