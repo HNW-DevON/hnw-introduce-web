@@ -178,11 +178,11 @@ export const BlueLine2 = styled.img`
 export const MainLastTitle = styled.div`
     color: black;
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 
     position: absolute;
     top: 0;
-    margin-top: 535%;
+    margin-top: 530%;
 `
 
 export const MainLastSub = styled.div`
