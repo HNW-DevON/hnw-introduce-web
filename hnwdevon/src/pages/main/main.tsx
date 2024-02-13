@@ -143,7 +143,7 @@ const Main: React.FC = () => {
           style={{
             opacity: visibleElements >= 5 ? 1 : 0,
             transform: `translateY(${visibleElements >= 5 ? "0" : "50px"})`,
-            transition: "opacity 0.5s, transform 2s",
+            transition: "opacity 0.5s, transform 1.4s",
           }}
         >
           <S.message1st src={HisMessage1} alt="error" />
@@ -153,7 +153,7 @@ const Main: React.FC = () => {
           style={{
             opacity: visibleElements >= 6 ? 1 : 0,
             transform: `translateY(${visibleElements >= 6 ? "0" : "50px"})`,
-            transition: "opacity 0.5s, transform 2s",
+            transition: "opacity 0.5s, transform 3s",
           }}
         >
           <S.message2st src={HisMessage2} alt="error" />
@@ -163,7 +163,7 @@ const Main: React.FC = () => {
           style={{
             opacity: visibleElements >= 7 ? 1 : 0,
             transform: `translateY(${visibleElements >= 7 ? "0" : "50px"})`,
-            transition: "opacity 0.5s, transform 2s",
+            transition: "opacity 0.5s, transform 2.1s",
           }}
         >
           <S.message3st src={HisMessage3} alt="error" />
