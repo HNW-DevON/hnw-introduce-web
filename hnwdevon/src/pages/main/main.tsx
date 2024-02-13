@@ -13,6 +13,7 @@ import SecondBackground from "../../assets/image/3back.svg"
 import Pesonal from "../../assets/image/Pesonal.svg"
 import Economy from "../../assets/image/economy.svg"
 import Blueline from "../../assets/image/blueline.svg"
+import Background3 from "../../assets/image/Background3.svg"
 
 const main = () => {
   return (
@@ -42,7 +43,7 @@ const main = () => {
             <S.HistoryStart>라는 의문점을 가지고 시작되었어요</S.HistoryStart>
           </S.HistoryStartWrap>
         </>
-        <S.SecondBackImg src={SecondBackground}/>
+        <S.SecondBackImg src={Background3}/>
         <S.PesonalImg src={Pesonal}/>
         <S.EconomyImg src={Economy}/>
         <S.BlueLine1 src={Blueline}/>
