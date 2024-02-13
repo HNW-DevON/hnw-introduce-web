@@ -12,7 +12,7 @@ import WhiteBack from "../../assets/image/whiteback.svg"
 import Pesonal from "../../assets/image/Pesonal.svg"
 import Economy from "../../assets/image/economy.svg"
 import Blueline from "../../assets/image/blueline.svg"
-import Background3 from "../../assets/image/Background3.svg"
+import Background3 from "../../assets/image/AlmostWhiteBackground.svg"
 
 const Main: React.FC = () => {
   const navigate = useNavigate();

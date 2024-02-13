@@ -184,3 +184,100 @@ export const MoreQuest = styled.div`
     margin-left: 13%;
     line-height: 1.4;
 `
+
+export const FindIntro = styled.div`
+    color: #097CFA;
+    font-weight: 900;
+    font-size: 1.9rem;
+    position: absolute;
+    top: 0;
+    margin-top: 900%;
+    margin-left: 13%;
+
+    text-align: center;
+`
+
+export const FindImg1 = styled.img`
+    width: 70%;
+    margin-top: 920%;
+    position: absolute;
+    top: 0;
+    margin-left: 15%;
+    bottom: 0;
+    left: 0;
+    animation: ${shakeUpDown} 2s ease-in-out infinite;
+`
+
+export const FindEx= styled.div`
+    color: black;
+    font-weight: 900;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 0;
+    margin-top: 1050%;
+    text-align: center;
+`
+
+export const FindExWrap = styled.div`
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+`
+
+export const PointIntro = styled.div`
+    color: #097CFA;
+    font-weight: 900;
+    font-size: 1.9rem;
+    position: absolute;
+    top: 0;
+    margin-top: 1120%;
+    margin-left: 13%;
+
+    text-align: center;
+`
+
+export const Point120 = styled.img`
+    width: 30%;
+
+    position: absolute;
+    top: 0;
+    margin-top: 1140%;
+    margin-left: 13%;
+`
+
+export const MangoP = styled.img`
+    position: absolute;
+    top: 0;
+    margin-top: 1170%;
+    margin-left: 13%;
+`
+export const StrawP = styled.img`
+    position: absolute;
+    top: 0;
+    margin-top: 1188%;
+    margin-left: 13%;
+`
+export const CoCoP = styled.img`
+    position: absolute;
+    top: 0;
+    margin-top: 1206%;
+    margin-left: 13%;
+`
+
+export const BadBuy = styled.img`
+    position: absolute;
+    top: 0;
+    margin-top: 1224%;
+    margin-left: 13%;
+`
+
+export const PointBuy = styled.div`
+    color: black;
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 0;
+    margin-top: 1253%;
+    margin-left: 13%;
+    line-height: 1.4;
+`
