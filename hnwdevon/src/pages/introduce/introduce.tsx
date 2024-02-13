@@ -7,6 +7,7 @@ import WhiteBack from "../../assets/image/whiteback.svg"
 import HomeImg from"../../assets/image/home.svg"
 import Barcode from "../../assets/image/barcode.svg"
 import BarcodeScan from "../../assets/image/barcodeScan.svg"
+import Quest from "../../assets/image/quest.svg"
 
 const introduce = () => {
   return (
@@ -41,6 +42,8 @@ const introduce = () => {
     </S.ScanEx>
     <S.WhiteBackground src={WhiteBack}/>
     <S.QuestIntro>퀘스트</S.QuestIntro>
+    <S.QuestImg src={Quest}/>
+    <S.MoreQuest> 다양한 퀘스트들을 한 눈에 보고 수행해봐요 </S.MoreQuest>
     </>
   )
 }

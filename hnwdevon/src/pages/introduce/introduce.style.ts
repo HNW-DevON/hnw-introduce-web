@@ -1,5 +1,7 @@
 import styled from "styled-components";
+import React from 'react';
 import { keyframes } from 'styled-components';
+
 
 export const  WithGoodbuy = styled.div`
     color: black;
@@ -150,4 +152,35 @@ export const QuestIntro = styled.div`
     margin-left: 13%;
 
     text-align: center;
+`
+
+const moveRight = keyframes`
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+`;
+
+export const QuestImg = styled.img`
+    width: 140%;
+    margin-top: 700%;
+    position: absolute;
+    top: 0;
+    margin-left: 13%;
+    bottom: 0;
+    left: 0;
+    animation: ${moveRight} 6s ease infinite; 
+`;
+
+export const MoreQuest = styled.div`
+    color: black;
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    margin-top: 850%;
+    margin-left: 13%;
+    line-height: 1.4;
 `
