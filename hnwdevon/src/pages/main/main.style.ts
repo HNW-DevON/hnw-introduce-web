@@ -4,7 +4,6 @@ export const Maintitle = styled.div`
     color: black;
     font-weight: 900;
     font-size: 1.7rem;
-
     position: absolute;
     top: 0;
     margin-top: 63%;
