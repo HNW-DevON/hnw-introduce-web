@@ -17,12 +17,56 @@ import StrawP from "../../assets/image/strawp.svg"
 import CoCoP from "../../assets/image/cocop.svg"
 import BadBuy from "../../assets/image/BadBuy.svg"
 
-const introduce = () => {
+const introduce: React.FC = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const isMain = location.pathname === '/';
+
+  const animatedElementRef1 = useRef<HTMLDivElement>(null);
+  const animatedElementRef2 = useRef<HTMLDivElement>(null);
+  const animatedElementRef3 = useRef<HTMLDivElement>(null);
+  const animatedElementRef4 = useRef<HTMLDivElement>(null);
+
+  const [visibleElements, setVisibleElements] = useState<number>(0);
+
+  useEffect(() => {
+    const OfferScroll = () => {
+      const { top: top1 } = animatedElementRef1.current!.getBoundingClientRect();
+      const { top: top2 } = animatedElementRef2.current!.getBoundingClientRect();
+      const { top: top3 } = animatedElementRef3.current!.getBoundingClientRect();
+      const { top: top4 } = animatedElementRef4.current!.getBoundingClientRect(); 
+     
+      const isInViewPort1 = top1 >= 0 && top1 <= window.innerHeight;
+      const isInViewPort2 = top2 >= 0 && top2 <= window.innerHeight;
+      const isInViewPort3 = top3 >= 0 && top3 <= window.innerHeight;
+      const isInViewPort4 = top4 >= 0 && top4 <= window.innerHeight; 
+  
+      let visibleCount = 0;
+      if (isInViewPort1) visibleCount = 1;
+      if (isInViewPort2) visibleCount = 2;
+      if (isInViewPort3) visibleCount = 3;
+      if (isInViewPort4) visibleCount = 4;  
+  
+      setVisibleElements(visibleCount);
+    };
+
+    window.addEventListener("scroll", OfferScroll);
+
+    return () => {
+      window.removeEventListener("scroll", OfferScroll);
+    };
+  }, []);
   return (
     <>
     <Header/>
     <S.WhiteBackground src={WhiteBack}/>
-    <S.WithGoodbuyWrap>
+    <S.WithGoodbuyWrap
+    ref={animatedElementRef1}
+    style={{
+      opacity: visibleElements >= 1 ? 1 : 0,
+      transform: `translateY(${visibleElements >= 1 ? "0" : "50px"})`,
+     transition: "opacity 0.5s, transform 2.3s", 
+    }}>
       <S.WithGoodbuy>착한소비와 함께라면 <br/>더욱 쉽게 사회적기업에 <br/>다가갈 수 있어요!</S.WithGoodbuy>
     </S.WithGoodbuyWrap>
     <S.WhiteBackground src={WhiteBack}/>
@@ -62,10 +106,10 @@ const introduce = () => {
     </S.FindExWrap>
     <S.WhiteBackground src={WhiteBack}/>
     <S.PointIntro>포인트</S.PointIntro>
-    <S.Point120 src={Point120}/>
-    <S.MangoP src={MangoP}/>
-    <S.StrawP src={StrawP}/>
-    <S.CoCoP src={CoCoP}/>
+    <S.Point120 src={Point120} alt="error" />
+    <S.MangoP src={MangoP} alt="error" />
+    <S.StrawP src={StrawP} alt="error" />
+    <S.CoCoP src={CoCoP} alt="error" />
     <S.BadBuy src={BadBuy}/>
     <S.PointBuy>포인트를 이용한 구매로 <br/> 현명한 소비를 즐겨보는건 어떨까요?</S.PointBuy>
     </>

@@ -9,7 +9,7 @@ export const  WithGoodbuy = styled.div`
     font-size: 1.7rem;
     position: absolute;
     top: 0;
-    margin-top: 63%;
+    margin-top: -130%;
 
     text-align: center;
 `
@@ -27,6 +27,10 @@ export const WhiteBackground = styled.img`
     object-fit: cover;
     width: 100%;
     display: block;
+`
+
+export const Point120Wrap = styled.div`
+
 `
 
 export const IntroHome = styled.div`
@@ -243,6 +247,10 @@ export const Point120 = styled.img`
     top: 0;
     margin-top: 1140%;
     margin-left: 13%;
+`
+
+export const justdiv = styled.div`
+
 `
 
 export const MangoP = styled.img`
