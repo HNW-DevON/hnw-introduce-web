@@ -35,7 +35,6 @@ const Main: React.FC = () => {
   const [visibleElements, setVisibleElements] = useState<number>(0);
 
   useEffect(() => {
-      const { top: top3 } = animatedElementRef3.current!.getBoundingClientRect();
     const MainScroll = () => {
       const top1 = animatedElementRef1.current?.getBoundingClientRect().top || 0;
       const top2 = animatedElementRef2.current?.getBoundingClientRect().top || 0;
