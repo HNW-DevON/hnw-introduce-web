@@ -92,29 +92,55 @@ export const AboutHistroyTitleWrap = styled.div`
     width: 100vw;
 `
 
-export const message1 = styled.img`
+export const message1 = styled.div`
+    /* width: 70%;
+
+    position: absolute;
+    top: 0;
+    margin-top: 290%; */
+`
+
+export const message1st = styled.img`
     width: 70%;
 
     position: absolute;
     top: 0;
-    margin-top: 290%;
+    margin-top: -155%;
 `
 
-export const message2 = styled.img`
-    width: 58%;
+export const message2 = styled.div`
+    /* width: 58%;
 
     position: absolute;
     top: 0;
     margin-top: 330%;
-    margin-left: 43%;
+    margin-left: 43%; */
 `
 
-export const message3 = styled.img`
-    width: 87%;
+export const message2st = styled.img`
+    width: 58%;
 
     position: absolute;
     top: 0;
-    margin-top: 370%;
+    margin-top: -104%;
+    margin-left: 43%;
+`
+
+export const message3 = styled.div`
+    /* width: 87%;
+
+    position: absolute;
+    top: 0;
+    margin-top: 370%; */
+`
+
+export const message3st = styled.img`
+    width: 78%;
+
+    position: absolute;
+    top: 0;
+    margin-top: -74%;
+    margin-left: 8%;
 `
 
 export const HistoryStart = styled.div`
