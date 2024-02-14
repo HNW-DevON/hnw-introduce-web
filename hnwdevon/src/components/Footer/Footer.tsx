@@ -14,13 +14,11 @@ const Footer = () => {
         <S.DevOn> DevOn </S.DevOn>
         <S.AppLogoFooter src={AppLogo}/>
         <S.Email>이메일 | teamdev00n@gmail.com</S.Email>
+        <S.School>DevOn .Daegu Software Meister High School since 2023</S.School>
         <S.Contact> Contact </S.Contact>
         <S.MailButton href="mailto:teamdev00n@gmail.com">
         →
         </S.MailButton>
-        <S.SchoolWrap>
-            <S.School>DevOn .Daegu Software Meister High School since 2023</S.School>
-        </S.SchoolWrap>
     </S.footerContainer>
     </>
   )

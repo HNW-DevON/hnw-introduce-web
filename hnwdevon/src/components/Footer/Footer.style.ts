@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const footerContainer = styled.div`
+margin-top: 20%;
   display: flex;
   position: relative;
   bottom: 0;
@@ -60,10 +61,7 @@ export const School = styled.div`
     text-align: center;
 `
 
-export const SchoolWrap = styled.div`
-    display: flex;
-    justify-content: center;
-`
+
 
 export const Contact = styled.div`
     color: white;
