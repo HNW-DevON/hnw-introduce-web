@@ -18,7 +18,9 @@ const Footer = () => {
         <S.MailButton href="mailto:teamdev00n@gmail.com">
         →
         </S.MailButton>
-        <S.School>DevOn .Daegu Software Meister High School since 2023</S.School>
+        <S.SchoolWrap>
+            <S.School>DevOn .Daegu Software Meister High School since 2023</S.School>
+        </S.SchoolWrap>
     </S.footerContainer>
     </>
   )

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const footerContainer = styled.div`
-display: flex;
+  display: flex;
   position: relative;
   bottom: 0;
   left: 0;
@@ -58,6 +58,11 @@ export const School = styled.div`
     margin-left: 9%;
 
     text-align: center;
+`
+
+export const SchoolWrap = styled.div`
+    display: flex;
+    justify-content: center;
 `
 
 export const Contact = styled.div`
