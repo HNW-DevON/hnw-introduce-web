@@ -75,7 +75,7 @@ const introduce: React.FC = () => {
     style={{
       opacity: visibleElements >= 1 ? 1 : 0,
       transform: `translateY(${visibleElements >= 1 ? "0" : "50px"})`,
-     transition: "opacity 0.5s, transform 2.3s", 
+     transition: "opacity 0.5s, transform 1.2s", 
     }}>
       <S.WithGoodbuy>착한소비와 함께라면 <br/>더욱 쉽게 사회적기업에 <br/>다가갈 수 있어요!</S.WithGoodbuy>
     </S.WithGoodbuyWrap>
