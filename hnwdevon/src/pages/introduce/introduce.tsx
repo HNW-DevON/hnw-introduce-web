@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState  } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 import * as S from "../introduce/introduce.style";
+import Footer from '../../components/Footer/Footer';
 
 import Header from "../../components/Header/Header"
 import WhiteBack from "../../assets/image/whiteback.svg"
@@ -162,6 +163,7 @@ const introduce: React.FC = () => {
       <S.BadBuyst src={BadBuy}/>
     </S.BadBuy>
     <S.PointBuy>포인트를 이용한 구매로 <br/> 현명한 소비를 즐겨보는건 어떨까요?</S.PointBuy>
+    <Footer/>
     </>
   )
 }

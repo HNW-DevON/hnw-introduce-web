@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState  } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 import * as S from "../member/member.style";
+import Footer from '../../components/Footer/Footer';
 
 import Header from "../../components/Header/Header"
 import MainBackground from "../../assets/image/MainBackP.svg"
@@ -428,6 +429,7 @@ const member: React.FC = () => {
       }}>
         <S.memberMessage src={dlrkdgus}/>
       </S.memberMessage4>
+      <Footer/>
     </>
   )
 }
