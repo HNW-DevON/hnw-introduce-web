@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const footerContainer = styled.div`
-margin-top: 20%;
+margin-top: 50%;
   display: flex;
   position: relative;
   bottom: 0;
@@ -52,10 +52,10 @@ export const Email = styled.div`
 export const School = styled.div`
     color: white;
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     position: absolute;
     top: 0;
-    margin-top: 65%;
+    margin-top: 67%;
     margin-left: 9%;
 
     text-align: center;
