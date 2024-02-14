@@ -29,9 +29,6 @@ export const WhiteBackground = styled.img`
     display: block;
 `
 
-export const Point120Wrap = styled.div`
-
-`
 
 export const IntroHome = styled.div`
     color: #097CFA;
@@ -240,8 +237,8 @@ export const PointIntro = styled.div`
     text-align: center;
 `
 
-export const Point120 = styled.img`
-    width: 30%;
+export const Point120 = styled.div`
+    width: 40%;
 
     position: absolute;
     top: 0;
@@ -249,34 +246,49 @@ export const Point120 = styled.img`
     margin-left: 13%;
 `
 
-export const justdiv = styled.div`
+export const Point120st = styled.img`
 
 `
 
-export const MangoP = styled.img`
+
+export const MangoP = styled.div`
     position: absolute;
     top: 0;
     margin-top: 1170%;
     margin-left: 13%;
 `
-export const StrawP = styled.img`
+
+export const MangoPst = styled.img`
+`
+
+export const StrawP = styled.div`
     position: absolute;
     top: 0;
     margin-top: 1188%;
     margin-left: 13%;
 `
-export const CoCoP = styled.img`
+
+export const StrawPst = styled.img`
+`
+
+export const CoCoP = styled.div`
     position: absolute;
     top: 0;
     margin-top: 1206%;
     margin-left: 13%;
 `
 
-export const BadBuy = styled.img`
+export const CoCoPst = styled.img`
+`
+
+export const BadBuy = styled.div`
     position: absolute;
     top: 0;
     margin-top: 1224%;
     margin-left: 13%;
+`
+
+export const BadBuyst = styled.img`
 `
 
 export const PointBuy = styled.div`

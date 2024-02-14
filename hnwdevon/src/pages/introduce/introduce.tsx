@@ -23,17 +23,38 @@ const introduce: React.FC = () => {
   const isMain = location.pathname === '/';
 
   const animatedElementRef1 = useRef<HTMLDivElement>(null);
+  const animatedElementRef2 = useRef<HTMLDivElement>(null);
+  const animatedElementRef3 = useRef<HTMLDivElement>(null);
+  const animatedElementRef4 = useRef<HTMLDivElement>(null);
+  const animatedElementRef5 = useRef<HTMLDivElement>(null);
+  const animatedElementRef6 = useRef<HTMLDivElement>(null);
 
   const [visibleElements, setVisibleElements] = useState<number>(0);
 
   useEffect(() => {
     const OfferScroll = () => {
       const { top: top1 } = animatedElementRef1.current!.getBoundingClientRect();
+      const { top: top2 } = animatedElementRef2.current!.getBoundingClientRect();
+      const { top: top3 } = animatedElementRef3.current!.getBoundingClientRect();
+      const { top: top4 } = animatedElementRef4.current!.getBoundingClientRect();
+      const { top: top5 } = animatedElementRef5.current!.getBoundingClientRect();
+      const { top: top6 } = animatedElementRef6.current!.getBoundingClientRect();
      
       const isInViewPort1 = top1 >= 0 && top1 <= window.innerHeight;
+      const isInViewPort2 = top2 >= 0 && top2 <= window.innerHeight;
+      const isInViewPort3 = top3 >= 0 && top3 <= window.innerHeight;
+      const isInViewPort4 = top4 >= 0 && top4 <= window.innerHeight;
+      const isInViewPort5 = top5 >= 0 && top5 <= window.innerHeight;
+      const isInViewPort6 = top6 >= 0 && top6 <= window.innerHeight;
+     
      
       let visibleCount = 0;
       if (isInViewPort1) visibleCount = 1;
+      if (isInViewPort2) visibleCount = 2;
+      if (isInViewPort3) visibleCount = 3;
+      if (isInViewPort4) visibleCount = 4;
+      if (isInViewPort5) visibleCount = 5;
+      if (isInViewPort6) visibleCount = 6;
   
       setVisibleElements(visibleCount);
     };
@@ -94,11 +115,52 @@ const introduce: React.FC = () => {
     </S.FindExWrap>
     <S.WhiteBackground src={WhiteBack}/>
     <S.PointIntro>포인트</S.PointIntro>
-    <S.Point120 src={Point120} alt="error" />
-    <S.MangoP src={MangoP} alt="error" />
-    <S.StrawP src={StrawP} alt="error" />
-    <S.CoCoP src={CoCoP} alt="error" />
-    <S.BadBuy src={BadBuy}/>
+    <S.Point120
+    ref={animatedElementRef2}
+    style={{
+      opacity: visibleElements >= 2 ? 1 : 0,
+      transform: `translateY(${visibleElements >= 2 ? "0" : "50px"})`,
+     transition: "opacity 0.5s, transform 2.3s", 
+    }}
+    >
+      <S.Point120st src={Point120} alt="error" />
+    </S.Point120>
+    <S.MangoP
+    ref={animatedElementRef3}
+    style={{
+      opacity: visibleElements >= 3 ? 1 : 0,
+      transform: `translateX(${visibleElements >= 3 ? "0" : "-50px"})`,
+     transition: "opacity 0.5s, transform 2.7s", 
+    }}>
+      <S.MangoPst src={MangoP} alt="error" />
+    </S.MangoP>
+    <S.StrawP
+    ref={animatedElementRef4}
+    style={{
+      opacity: visibleElements >= 4 ? 1 : 0,
+      transform: `translateX(${visibleElements >= 4 ? "0" : "-50px"})`,
+     transition: "opacity 0.5s, transform 2.7s", 
+    }}>
+      <S.StrawPst src={StrawP} alt="error" />
+    </S.StrawP>
+    <S.CoCoP
+    ref={animatedElementRef5}
+    style={{
+      opacity: visibleElements >= 5 ? 1 : 0,
+      transform: `translateX(${visibleElements >= 5 ? "0" : "-50px"})`,
+     transition: "opacity 0.5s, transform 2.7s", 
+    }}>
+      <S.CoCoPst src={CoCoP} alt="error" />
+    </S.CoCoP>
+    <S.BadBuy
+    ref={animatedElementRef6}
+    style={{
+      opacity: visibleElements >= 6 ? 1 : 0,
+      transform: `translateX(${visibleElements >= 6 ? "0" : "50px"})`,
+     transition: "opacity 0.5s, transform 2.7s", 
+    }}>
+      <S.BadBuyst src={BadBuy}/>
+    </S.BadBuy>
     <S.PointBuy>포인트를 이용한 구매로 <br/> 현명한 소비를 즐겨보는건 어떨까요?</S.PointBuy>
     </>
   )
