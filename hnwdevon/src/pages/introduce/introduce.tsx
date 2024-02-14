@@ -23,29 +23,17 @@ const introduce: React.FC = () => {
   const isMain = location.pathname === '/';
 
   const animatedElementRef1 = useRef<HTMLDivElement>(null);
-  const animatedElementRef2 = useRef<HTMLDivElement>(null);
-  const animatedElementRef3 = useRef<HTMLDivElement>(null);
-  const animatedElementRef4 = useRef<HTMLDivElement>(null);
 
   const [visibleElements, setVisibleElements] = useState<number>(0);
 
   useEffect(() => {
     const OfferScroll = () => {
       const { top: top1 } = animatedElementRef1.current!.getBoundingClientRect();
-      const { top: top2 } = animatedElementRef2.current!.getBoundingClientRect();
-      const { top: top3 } = animatedElementRef3.current!.getBoundingClientRect();
-      const { top: top4 } = animatedElementRef4.current!.getBoundingClientRect(); 
      
       const isInViewPort1 = top1 >= 0 && top1 <= window.innerHeight;
-      const isInViewPort2 = top2 >= 0 && top2 <= window.innerHeight;
-      const isInViewPort3 = top3 >= 0 && top3 <= window.innerHeight;
-      const isInViewPort4 = top4 >= 0 && top4 <= window.innerHeight; 
-  
+     
       let visibleCount = 0;
       if (isInViewPort1) visibleCount = 1;
-      if (isInViewPort2) visibleCount = 2;
-      if (isInViewPort3) visibleCount = 3;
-      if (isInViewPort4) visibleCount = 4;  
   
       setVisibleElements(visibleCount);
     };
