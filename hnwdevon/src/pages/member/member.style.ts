@@ -387,3 +387,79 @@ export const Member = styled.div`
     margin-top: 900%;
     margin-left: 13%;
 `
+
+export const MemberPhone = styled.img`
+    width: 60%;
+    top: 0;
+    position: absolute;
+    margin-top: 930%;
+`
+
+export const MemberPhoneWrap = styled.div`
+    display: flex;
+    justify-content: center;
+`
+
+export const membermemoji = styled.img`
+    width: 30%;
+`
+
+export const membermemoji1 = styled.div`
+    top: 0;
+    position: absolute;
+    margin-top: 920%;
+    margin-left: 13%;
+`
+
+export const membermemoji2 = styled.div`
+    top: 0;
+    position: absolute;
+    margin-top: 960%;
+    margin-left: 13%;
+`
+
+export const membermemoji3 = styled.div`
+    top: 0;
+    position: absolute;
+    margin-top: 1000%;
+    margin-left: 13%;
+`
+
+export const membermemoji4 = styled.div`
+    top: 0;
+    position: absolute;
+    margin-top: 1040%;
+    margin-left: 13%;
+`
+
+export const memberMessage = styled.img`
+    width: 80%;
+`
+
+export const memberMessage1 = styled.div`
+    top: 0;
+    position: absolute;
+    margin-top: 925%;
+    margin-left: 30%;
+`
+
+export const memberMessage2 = styled.div`
+    top: 0;
+    position: absolute;
+    margin-top: 965%;
+    margin-left: 30%;
+`
+
+export const memberMessage3 = styled.div`
+    top: 0;
+    position: absolute;
+    margin-top: 1005%;
+    margin-left: 30%;
+`
+
+export const memberMessage4 = styled.div`
+    top: 0;
+    position: absolute;
+    margin-top: 1045%;
+    margin-left: 30%;
+`

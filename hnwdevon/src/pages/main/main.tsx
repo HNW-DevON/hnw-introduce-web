@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 import Header from "../../components/Header/Header"
+import Footer from '../../components/Footer/Footer';
 import * as S from "../main/main.style";
 
 import FistBackground from "../../assets/image/background1.svg"
@@ -214,6 +215,7 @@ const Main: React.FC = () => {
           <S.MainLastEsgSpan> ESG </S.MainLastEsgSpan>실천을 지향해요!
         </S.MainLastEsg>
       </S.MainLastWrap>
+      <Footer/>
     </>
   )
 }

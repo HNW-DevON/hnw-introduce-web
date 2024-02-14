@@ -22,7 +22,15 @@ import Tuist from "../../assets/image/Tuist.svg"
 import github from "../../assets/image/github.svg"
 import Figma from "../../assets/image/figma.svg"
 import Notion from "../../assets/image/notion.svg"
-
+import Phone from "../../assets/image/memberbackphone.svg"
+import tmfdk from "../../assets/image/tmfdk.svg"
+import alfo from "../../assets/image/alfo.svg"
+import cogml from "../../assets/image/cogml.svg"
+import rkdgus from "../../assets/image/rkdgus.svg"
+import dltmfdk from "../../assets/image/dltmfdk.svg"
+import chlalfo from "../../assets/image/chlalfo.svg"
+import qocogml from "../../assets/image/qocogml.svg"
+import dlrkdgus from "../../assets/image/dlrkdgus.svg"
 
 const member: React.FC = () => {
   const navigate = useNavigate();
@@ -50,6 +58,10 @@ const member: React.FC = () => {
   const animatedElementRef19 = useRef<HTMLDivElement>(null); 
   const animatedElementRef20 = useRef<HTMLDivElement>(null); 
   const animatedElementRef21 = useRef<HTMLDivElement>(null); 
+  const animatedElementRef22 = useRef<HTMLDivElement>(null); 
+  const animatedElementRef23 = useRef<HTMLDivElement>(null); 
+  const animatedElementRef24 = useRef<HTMLDivElement>(null); 
+  const animatedElementRef25 = useRef<HTMLDivElement>(null); 
 
   const [visibleElements, setVisibleElements] = useState<number>(0);
 
@@ -76,6 +88,10 @@ const member: React.FC = () => {
       const { top: top19 } = animatedElementRef19.current!.getBoundingClientRect();
       const { top: top20 } = animatedElementRef20.current!.getBoundingClientRect();
       const { top: top21 } = animatedElementRef21.current!.getBoundingClientRect();
+      const { top: top22 } = animatedElementRef22.current!.getBoundingClientRect();
+      const { top: top23 } = animatedElementRef23.current!.getBoundingClientRect();
+      const { top: top24 } = animatedElementRef24.current!.getBoundingClientRect();
+      const { top: top25 } = animatedElementRef25.current!.getBoundingClientRect();
      
       const isInViewPort1 = top1 >= 0 && top1 <= window.innerHeight;
       const isInViewPort2 = top2 >= 0 && top2 <= window.innerHeight;
@@ -98,6 +114,10 @@ const member: React.FC = () => {
       const isInViewPort19 = top19 >= 0 && top19 <= window.innerHeight;
       const isInViewPort20 = top20 >= 0 && top20 <= window.innerHeight;
       const isInViewPort21 = top21 >= 0 && top21 <= window.innerHeight;
+      const isInViewPort22 = top22 >= 0 && top22 <= window.innerHeight;
+      const isInViewPort23 = top23 >= 0 && top23 <= window.innerHeight;
+      const isInViewPort24 = top24 >= 0 && top24 <= window.innerHeight;
+      const isInViewPort25= top25 >= 0 && top25 <= window.innerHeight;
      
       let visibleCount = 0;
       if (isInViewPort1) visibleCount = 1;
@@ -121,6 +141,10 @@ const member: React.FC = () => {
       if (isInViewPort19) visibleCount = 19;
       if (isInViewPort20) visibleCount = 20
       if (isInViewPort21) visibleCount = 21;
+      if (isInViewPort22) visibleCount = 22;
+      if (isInViewPort23) visibleCount = 23;
+      if (isInViewPort24) visibleCount = 24;
+      if (isInViewPort25) visibleCount = 25;
   
       setVisibleElements(visibleCount);
     };
@@ -353,6 +377,57 @@ const member: React.FC = () => {
       </S.useStackWrap>
       <S.WhiteBackground src={WhiteBack}/>
       <S.Member>Member</S.Member>
+      <S.MemberPhoneWrap>
+        <S.MemberPhone src={Phone}/>
+      </S.MemberPhoneWrap>
+      <S.membermemoji1>
+        <S.membermemoji src={tmfdk}/>
+      </S.membermemoji1>
+      <S.membermemoji2>
+        <S.membermemoji src={alfo}/>
+      </S.membermemoji2>
+      <S.membermemoji3>
+        <S.membermemoji src={cogml}/>
+      </S.membermemoji3>
+      <S.membermemoji4>
+        <S.membermemoji src={rkdgus}/>
+      </S.membermemoji4>
+      <S.memberMessage1
+      ref={animatedElementRef22}
+      style={{
+        opacity: visibleElements >= 22 ? 1 : 0,
+        transform: `translateY(${visibleElements >= 22 ? "0" : "50px"})`,
+      transition: "opacity 0.5s, transform 2.5s", 
+      }}>
+        <S.memberMessage src={dltmfdk}/>
+      </S.memberMessage1>
+      <S.memberMessage2
+      ref={animatedElementRef23}
+      style={{
+        opacity: visibleElements >= 23 ? 1 : 0,
+        transform: `translateY(${visibleElements >= 23 ? "0" : "50px"})`,
+      transition: "opacity 0.5s, transform 2.5s", 
+      }}>
+        <S.memberMessage src={chlalfo}/>
+      </S.memberMessage2>
+      <S.memberMessage3
+      ref={animatedElementRef24}
+      style={{
+        opacity: visibleElements >= 24 ? 1 : 0,
+        transform: `translateY(${visibleElements >= 24 ? "0" : "50px"})`,
+      transition: "opacity 0.5s, transform 2.5s", 
+      }}>
+        <S.memberMessage src={qocogml}/>
+      </S.memberMessage3>
+      <S.memberMessage4
+      ref={animatedElementRef25}
+      style={{
+        opacity: visibleElements >= 25 ? 1 : 0,
+        transform: `translateY(${visibleElements >= 25 ? "0" : "50px"})`,
+      transition: "opacity 0.5s, transform 2.5s", 
+      }}>
+        <S.memberMessage src={dlrkdgus}/>
+      </S.memberMessage4>
     </>
   )
 }
