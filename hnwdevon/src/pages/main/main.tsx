@@ -154,7 +154,7 @@ const Main: React.FC = () => {
           style={{
             opacity: visibleElements >= 6 ? 1 : 0,
             transform: `translateY(${visibleElements >= 6 ? "0" : "50px"})`,
-            transition: "opacity 0.5s, transform 3s",
+            transition: "opacity 0.5s, transform 1.2s",
           }}
         >
           <S.message2st src={HisMessage2} alt="error" />
